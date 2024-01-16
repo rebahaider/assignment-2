@@ -1,0 +1,19 @@
+body{
+    margin: 50px 100px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-style-1{
+    display: flex;
+}
+
+.nav-style-2 ul{
+    display: flex;
+}
+.nav-style-2 li{
+    list-style: none;
+}
