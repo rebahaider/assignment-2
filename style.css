@@ -1,19 +1,64 @@
+/* Mulish font style link from google font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Inter:wght@500;700&family=Merriweather:wght@400;700&family=Mulish:wght@400;500;600;700;800&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+  /* font style */
+  *{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+
 body{
     margin: 50px 100px;
 }
 
+/* shared styles */
+.travel-style{
+    color: #FF5400;
+}
+   /* header section start */
+
+   /* nav section start */
+
 .nav-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
 }
 
 .nav-style-1{
     display: flex;
+    border: 1px solid black;
 }
-
+.nav-style-1 img{
+    width: 48px;
+    height: 40px;
+    margin-top: 38px;
+    margin-right: 10px;
+    align-items: center;
+}
+.nav-style-1 h1{
+    font-size: 2.5rem;
+}
+.nav-style-2 {
+    border: 2px solid black;
+}
 .nav-style-2 ul{
     display: flex;
+    justify-content: space-evenly;
+}
+.nav-style-2 .travel-style{
+    font-weight: 700;
 }
 .nav-style-2 li{
     list-style: none;
+    margin-right: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424247;
 }
