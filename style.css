@@ -12,9 +12,9 @@
   }
 
 
-body{
+/* body{
     margin: 50px 100px;
-}
+} */
 
 /* shared styles */
 .travel-style{
@@ -28,6 +28,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 50px 100px;
 }
 
 .nav-style-1{
@@ -59,9 +60,10 @@ body{
 }
 /* main section start */
 .banner-image{
+    margin: 0 100px;
     background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
-    width: 100%;
+    
     height: 500px;
 }
 .banner-image h1{
@@ -80,7 +82,7 @@ body{
 .banner-shadow{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    display: inline-flex;
+    display: flex;
     padding: 16px;
     gap: 24px;
     margin: 0 250px;
@@ -95,8 +97,34 @@ body{
     border: none;
     color: rgba(19, 19, 24, 0.50);
 }
-.btn-primary{
-    background-color: #FF5400;
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    height: 502px;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.footer-description{
+    text-align: center;
+    padding: 0 300px;
+    
+}
+.footer-icons{
+    text-align: center;
+}
+.footer-icons i{
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+hr{
+    width: 800px;
+}
+.copy-right{
+    text-align: center;
+    margin-top: 50px;
 }
 
 
@@ -109,5 +137,19 @@ body{
     }
     .nav-style-1{
         flex-direction: row;
+    }
+    .banner-image p{
+        padding: 0 0;
+    }
+    .banner-image h1{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .banner-shadow{
+        height: 52px;
+        width: 255px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
