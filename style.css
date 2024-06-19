@@ -194,6 +194,7 @@
 
 .nav-container {
     display: flex;
+    margin: 0 30px;
     justify-content: space-between;
     align-items: center;
 }
@@ -248,6 +249,7 @@
     border-radius: 8px;
     position: relative;
     background-size: cover;
+    margin: 0 50px
 }
 
 .banner-image::before {
@@ -709,37 +711,5 @@ hr {
 }
 
 @media screen and (min-width:992px) {
-    .nav-container {
-        margin: 50px 100px;
-    }
-
-    .nav-style-1 {
-        flex-direction: row;
-    }
-
-    .banner-image {
-        margin: 0 100px;
-        height: 500px;
-    }
-
-    .banner-image p {
-        padding: 0 150px;
-    }
-
-    .banner-image h1 {
-        padding-top: 100px;
-        font-size: 50px;
-    }
-
-    .banner-shadow {
-        margin: 0 250px;
-    }
-
-    .footer-description {
-        padding: 0 300px;
-    }
-
-    hr {
-        width: 800px;
-    }
+    
 }
