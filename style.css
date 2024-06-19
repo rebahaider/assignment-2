@@ -244,7 +244,7 @@
 
 /* banner section */
 .banner-image {
-    background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-image: url('Images/Group 13.png');
     height: 500px;
     border-radius: 8px;
     position: relative;
