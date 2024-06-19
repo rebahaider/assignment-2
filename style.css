@@ -377,7 +377,21 @@ select {
 .line {
     width: 100%;
 }
-
+/* awesome service */
+.awesome-service{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    text-align: center;
+    gap: 30px;
+    margin: 50px;
+}
+.service-container{
+    background-color: rgba(66, 66, 71, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid;
+    
+}
 
 /* deals and discounts */
 .img1-style {
@@ -560,7 +574,14 @@ hr {
         display: block;
         margin-top: 10px
     }
-
+/* awesome services */
+.awesome-service{
+    display: grid;
+    grid-template-columns: repeat( 1, 1fr);
+    text-align: center;
+    gap: 30px;
+    margin: 50px;
+}
 
     /* popular section */
     .popular-section {
