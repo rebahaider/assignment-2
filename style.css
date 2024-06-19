@@ -16,6 +16,7 @@
 .travel-style {
     color: #FF5400;
 }
+
 .header-paragraph-style {
     text-align: center;
     padding: 0 20%;
@@ -157,27 +158,30 @@
 }
 
 /* choose us */
-.hotel-map{
+.hotel-map {
     display: flex;
     gap: 20px;
     margin: 30px 0 20px 0;
     justify-content: center;
 }
-.hotel{
+
+.hotel {
     width: 573px;
     padding: 20px;
     border-radius: 8px;
     background-color: rgba(251, 181, 99, 0.05);
     border: 1px solid rgba(251, 181, 99, 0.20);
 }
-.map{
+
+.map {
     width: 573px;
     padding: 20px;
     border-radius: 8px;
     background-color: rgba(41, 206, 246, 0.05);
     border: 1px solid rgba(41, 206, 246, 0.20);
 }
-.price-tag{
+
+.price-tag {
     width: 573px;
     padding: 20px;
     border-radius: 8px;
@@ -239,13 +243,25 @@
 
 /* banner section */
 .banner-image {
-    margin: 0 100px;
-    background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
-    background-repeat: no-repeat;
+    background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
     height: 500px;
     border-radius: 8px;
+    position: relative;
+    background-size: cover;
 }
 
+.banner-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.banner-image-content{
+    position: absolute;
+}
 .banner-image h1 {
     text-align: center;
     padding-top: 100px;
@@ -290,19 +306,21 @@ select {
     color: rgba(19, 19, 24, 0.50);
 }
 
- /* newsletter */
- .newsletter{
+/* newsletter */
+.newsletter {
     display: flex;
     justify-content: center;
     gap: 30px;
     align-items: center;
 }
-.newsletter .left-side{
+
+.newsletter .left-side {
     border: 1px solid #FF5400;
     padding: 55px 25px;
     border-radius: 10px;
 }
-.newsletter .form .form1{
+
+.newsletter .form .form1 {
     padding: 15px;
     margin: 20px 0;
     width: 80%;
@@ -310,7 +328,8 @@ select {
     border: none;
     background-color: rgba(19, 19, 24, 0.05);
 }
-.newsletter .form .form2{
+
+.newsletter .form .form2 {
     padding: 15px;
     margin-bottom: 20px;
     width: 80%;
@@ -318,7 +337,8 @@ select {
     border: none;
     background-color: rgba(19, 19, 24, 0.05);
 }
-.newsletter button{
+
+.newsletter button {
     background-color: #FF5400;
     color: #FFF;
     font-weight: 600;
@@ -327,7 +347,8 @@ select {
     width: 87%;
     border-radius: 8px;
 }
-.right-side .card{
+
+.right-side .card {
     width: 300px;
     color: white;
     text-align: center;
@@ -335,20 +356,108 @@ select {
     border-radius: 8px;
     background-color: #FF5400;
 }
-.right-side .card h3{
-font-weight: 200;
+
+.right-side .card h3 {
+    font-weight: 200;
 }
-.right-side{
+
+.right-side {
     position: relative;
 }
-.card{
+
+.card {
     position: absolute;
     bottom: 60px;
     right: 10px;
     rotate: -20deg;
 }
-.line{
+
+.line {
     width: 100%;
+}
+
+
+/* deals and discounts */
+.img1-style {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.img2-style {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.img3-style {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.tour-details-part {
+    text-align: left;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(255, 255, 255);
+    position: absolute;
+    top: 70px;
+    right: 120px;
+    border-radius: 8px;
+    padding: 30px;
+
+}
+
+.tour-details-part-img2 {
+    text-align: left;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(255, 255, 255);
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.icons-style {
+    color: #FF5400;
+}
+
+.top-style {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.total-style {
+    display: flex;
+    gap: 30px;
+}
+
+.tour-details-part button {
+    background-color: #FF5400;
+    color: #FFF;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tour-details-part-img2 button {
+    background-color: #FF5400;
+    color: #FFF;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price-style {
+    color: #FF5400;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 /* footer section */
@@ -426,9 +535,13 @@ hr {
         width: 500px;
         margin: 0 auto;
     }
+    .banner-image-content{
+        padding: 0 ;
+    }
 
     .banner-image h1 {
         padding: 10px;
+        font-size: 30px;
     }
 
     .banner-image p {
@@ -452,6 +565,11 @@ hr {
         display: block;
         margin: 0;
         text-align: center;
+    }
+
+    .popular-left-side {
+        text-align: left;
+        margin-left: 30px;
     }
 
     .popular-section .popular-image img {
@@ -503,18 +621,21 @@ hr {
     }
 
     /* choose us section */
-    .hotel-map{
+    .hotel-map {
         display: block;
     }
-    .hotel{
+
+    .hotel {
         width: 500px;
         margin: 0 auto 20px;
     }
-    .map{
+
+    .map {
         width: 500px;
         margin: 0 auto;
     }
-    .price-tag{
+
+    .price-tag {
         width: 500px;
     }
 
@@ -538,18 +659,51 @@ hr {
     .copy-right {
         margin: 20px;
     }
+
     /* newsletter */
-    .newsletter{
+    .newsletter {
         display: block;
     }
-    .newsletter img{
+
+    .newsletter img {
         width: 565px;
         margin: 20px auto;
     }
-    .card{
+
+    .card {
         bottom: 75px;
         right: 15px;
         rotate: -20deg;
+    }
+
+    /* deals and discounts */
+    .img1-style img {
+        width: 550px;
+        height: 550px;
+    }
+    .img2-style img {
+        width: 550px;
+        height: 550px;
+    }
+    .img3-style img {
+        width: 550px;
+        height: 550px;
+    }
+
+    .tour-details-part {
+        width: 450px;
+        height: 300px;
+        top: 170px;
+        right: 25px;
+        border-radius: 8px;
+    }
+
+    .tour-details-part-img2 {
+        width: 450px;
+        top: 170px;
+        left: 30px;
+        border-radius: 8px;
+        padding: 30px;
     }
 
 }
